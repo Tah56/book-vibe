@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { BookCtext } from "../../BookContext/BookContext";
+
 
 const BookDetailCard = ({findind}) => {
+
+    const bookContext =useContext(BookCtext)
+    console.log(bookContext);
+    const {makeHandler}=bookContext
+
   return (
     <div className="card card-side  bg-base-100 shadow-sm">
       <figure className="p-10 bg-gray-200 w-1/2">
@@ -15,7 +22,8 @@ const BookDetailCard = ({findind}) => {
         <p>{findind.author}</p>
         <p>{findind.category}</p>
         <div className="card-actions ">
-          <button className="btn btn-primary">Watch</button>
+           <button className="btn btn-neutral btn-outline" onClick={()=>{makeHandler(findind)}}>Add To List</button>
+          <button className="btn btn-primary">wishList</button>
         </div>
       </div>
     </div>

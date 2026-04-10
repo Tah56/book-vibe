@@ -4,8 +4,11 @@ import './index.css'
 
 import { RouterProvider } from 'react-router'
 import { router } from './routes/Router.jsx'
+import BookContext from './BookContext/BookContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  
-    <RouterProvider router={router} />
+  <BookContext>
+
+    <RouterProvider router={router}  />
+  </BookContext>
 )
