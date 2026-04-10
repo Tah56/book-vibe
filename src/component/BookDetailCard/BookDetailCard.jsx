@@ -5,7 +5,7 @@ import { BookCtext } from "../../BookContext/BookContext";
 const BookDetailCard = ({findind}) => {
 
     const bookContext =useContext(BookCtext)
-    console.log(bookContext);
+   
     const {makeHandler}=bookContext
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = ({ card }) => {
-  console.log(card);
+
 
   const { bookId, bookName, category, publisher, rating, image } = card;
 

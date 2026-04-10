@@ -7,7 +7,7 @@ const CardSection = () => {
     
     
     return (
-        <div className='py-24 w-11/12 mx-auto'>
+        <div  className='py-24 w-11/12 mx-auto'>
            <h2 className='font-bold text-5xl text-center'>Books</h2>
            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
            
